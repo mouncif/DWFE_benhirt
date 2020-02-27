@@ -17,11 +17,9 @@ export class LoginComponent {
   login(){
     if(this.email  ===  'email@email.com'  &&  this.password  === 'p@ssw0rd')
     {
-        console.log("Success");
-    }
-    else
-    {
-        this.dialog.open(Message,{ data: {
+        console.log('Success');
+    } else {
+        this.dialog.open(Message, { data: {
         message:  'Error!!!'
         }});
     }
