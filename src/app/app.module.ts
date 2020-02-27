@@ -4,15 +4,26 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GestionDeVentesComponent } from './gestion-de-ventes/gestion-de-ventes.component';
+import { UtilisateurEtDroitComponent } from './utilisateur-et-droit/utilisateur-et-droit.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GestionDeVentesComponent,
+    UtilisateurEtDroitComponent,
+    NavbarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
