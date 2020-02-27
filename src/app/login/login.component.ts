@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class LoginComponent {
     }
     else
     {
-        this.dialog.open(MessageComponent,{ data: {
+        this.dialog.open(Message,{ data: {
         message:  'Error!!!'
         }});
     }

@@ -9,6 +9,8 @@ import { UtilisateurEtDroitComponent } from './utilisateur-et-droit/utilisateur-
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MaterialModule } from './material/material.module';
+import { LoginComponent } from './login/login.component';
+import { Message } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MaterialModule } from './material/material.module';
     GestionDeVentesComponent,
     UtilisateurEtDroitComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    LoginComponent,
+    Message
   ],
   imports: [
     BrowserModule,
