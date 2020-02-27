@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Message } from '@angular/compiler/src/i18n/i18n_ast';
+import { Router} from '@angular/router'
 
 @Component({
   selector: 'app-login',
@@ -8,11 +9,15 @@ import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 })
 export class LoginComponent {
 
+  dialog: any;
+  email: any;
+  password: any;
+
   constructor() { }
   login(){
     if(this.email  ===  'email@email.com'  &&  this.password  === 'p@ssw0rd')
     {
-        this.router.navigate(['success']);
+        console.log("Success");
     }
     else
     {
