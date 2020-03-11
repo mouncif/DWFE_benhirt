@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { GestionDeVentesComponent } from './gestion-de-ventes/gestion-de-ventes.component';
-import { UtilisateurEtDroitComponent } from './utilisateur-et-droit/utilisateur-et-droit.component';
-import { ProduitComponent } from './produit/produit.component';
+import { ProduitListComponent } from './produit/produit-list/produit-list.component';
+
 
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'ventes', component:  GestionDeVentesComponent },
-  { path: 'droit', component: UtilisateurEtDroitComponent },
-  { path: '', component: ProduitComponent }
+  //{ path: 'login', component: LoginComponent },
+  //{ path: 'produitlist', component: ProduitListComponent }
 ];
 
 @NgModule({

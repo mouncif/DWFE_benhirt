@@ -1,10 +1,37 @@
 {
-  "produit":[
-      {"nom":"Bouteille d'eau", "nomcourt": "BtEau","prixb":3,"prixv": 4, "seuilmax":20,"unite": 3,"image": "", "qinit": 10,"qtactu": 7},
-      {"nom":"Livre", "nomcourt": "Lvr","prixb":40,"prixv": 45, "seuilmax":2,"unite": 3,"image": "", "qinit": 10,"qtactu": 7},
-      {"nom":"Laptop", "nomcourt": "Lpt","prixb":3000,"prixv": 3100, "seuilmax":30,"unite": 6,"image": "", "qinit": 6,"qtactu": 3},
-      {"nom":"Laptop", "nomcourt": "Lpt2","prixb":4000,"prixv": 4200, "seuilmax":20,"unite": 3,"image": "", "qinit": 6,"qtactu": 3},
-      {"nom":"Laptop", "nomcourt": "Lpt","prixb":3000,"prixv": 3100, "seuilmax":30,"unite": 6,"image": "", "qinit": 6,"qtactu": 3}
-
+  "produits": [
+    {
+      "id": 2,
+      "nom": "Bouteille d'eau",
+      "nomcourt": "BtEau",
+      "prixb": 3,
+      "prixv": 4,
+      "seuilmax": 20,
+      "unite": 3,
+      "qinit": 10,
+      "qtactu": 7
+    },
+    {
+      "id": 3,
+      "nom": "aaav",
+      "nomcourt": "a",
+      "prixb": "23",
+      "prixv": "25",
+      "seuilmax": "30",
+      "unite": "89",
+      "qinit": "12",
+      "qtactu": "80"
+    },
+    {
+      "id": 4,
+      "nom": "a",
+      "nomcourt": "b",
+      "prixb": "12",
+      "prixv": "14",
+      "seuilmax": "2",
+      "unite": "22",
+      "qinit": "33",
+      "qtactu": "44"
+    }
   ]
 }

@@ -1,13 +1,13 @@
 import { Url } from 'url';
 
-export class Prod {
+export interface Prod {
+    id?: string;
     nom: string;
     nomcourt: string;
     prixb: number;
     prixv: number;
     seuilmax: number;
     unite: number;
-    image: string;
     qinit: number;
     qtactu: number;
 }

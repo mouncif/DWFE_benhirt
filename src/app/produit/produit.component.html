@@ -1,56 +1,57 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-    <ng-container matColumnDef="nom">
-      <th mat-header-cell *matHeaderCellDef> Nom </th>
-      <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
-    </ng-container>
-  
+<div class="mat-elevation-z8" >
     
-    <ng-container matColumnDef="nomcourt">
-      <th mat-header-cell *matHeaderCellDef> Nom Court </th>
-      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-    </ng-container>
+    <form [formGroup] ='service.form' class="normal-form" (submit)="onSubmit()">
+        <mat-grid-list cols="2" rowHeight="400px">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="id"> 
+                    <mat-form-field>
+                        <input formControlName="nom" matInput placeholder="Nom Produit"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
 
-    <ng-container matColumnDef="seuilmax">
-        <th mat-header-cell *matHeaderCellDef> Nom Court </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-      </ng-container>
-  
-    
-    <ng-container matColumnDef="prixb">
-      <th mat-header-cell *matHeaderCellDef> Prix de base </th>
-      <td mat-cell *matCellDef="let element"> {{element.prixb}} </td>
-    </ng-container>
-  
-   
-    <ng-container matColumnDef="prixv">
-      <th mat-header-cell *matHeaderCellDef> Prix de vente </th>
-      <td mat-cell *matCellDef="let element"> {{element.prixv}} </td>
-    </ng-container>
+                    <mat-form-field>
+                        <input formControlName="nomcourt" matInput placeholder="Nom Produit Court"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    
+                    <mat-form-field>
+                        <input formControlName="prixb" matInput placeholder="Prix Base"> 
+                    </mat-form-field>
 
-
-      <ng-container matColumnDef="unite">
-        <th mat-header-cell *matHeaderCellDef> Unite du prod </th>
-        <td mat-cell *matCellDef="let element"> {{element.unite}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="image">
-        <th mat-header-cell *matHeaderCellDef> Image du prod </th>
-        <td mat-cell *matCellDef="let element"> {{element.image}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="qinit">
-        <th mat-header-cell *matHeaderCellDef> Quantite initiale</th>
-        <td mat-cell *matCellDef="let element"> {{element.qinit}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="qtactu">
-        <th mat-header-cell *matHeaderCellDef> Quantite actuelle</th>
-        <td mat-cell *matCellDef="let element"> {{element.qtactu}} </td>
-      </ng-container>
-  
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-  
-  
+                    <mat-form-field>
+                        <input formControlName="qinit" matInput placeholder="Quantite Initiale">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="controles-container">
+                   
+                    <mat-form-field>
+                        <input formControlName="prixv" matInput placeholder="Prix Vente">  
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="seuilmax" matInput placeholder="Seuil Maximum">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="unite" matInput placeholder="Unité Du Produit">
+                    </mat-form-field>
+                    
+                    <mat-form-field>
+                        <input formControlName="qtactu" matInput placeholder="Quantite Actuelle">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <div class="button-row">
+                        <button mat-raised-button color="primary" type="submit" [disabled]='service.form.invalid'>submit</button>
+                    </div>
+                    </div>
+                    
+                    
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</div>
