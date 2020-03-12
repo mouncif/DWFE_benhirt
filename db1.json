@@ -35,5 +35,29 @@
       "faxf": "0524094831",
       "emailf": "asmatours@gmail.com"
     }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "nomc": "Ahmad",
+      "prenomc": "Talal",
+      "statusc": "C",
+      "photoc": " ",
+      "telc": "0678036638",
+      "emailc": "a.t@gmail.com",
+      "adressec": "op b num56",
+      "villec": "Casablanca"
+    },
+    {
+      "id": 2,
+      "nomc": "John",
+      "prenomc": "Doe",
+      "statusc": "C",
+      "photoc": "",
+      "telc": "0015433890",
+      "emailc": "john.doe@gmail.com",
+      "adressec": "5th Avenue",
+      "villec": "NYC"
+    }
   ]
 }

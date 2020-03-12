@@ -24,6 +24,7 @@ import { ProduitService } from './services/produit.service';
 import { FournisseurService } from './services/fournisseur.service';
 import { ClientService } from './services/client.service';
 import { FournisseurListComponent } from './fournisseur/fournisseur-list/fournisseur-list.component';
+import { ClientListComponent } from './client/client-list/client-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FournisseurListComponent } from './fournisseur/fournisseur-list/fournis
     FournisseurComponent,
     ClientComponent,
     ProduitListComponent,
-    FournisseurListComponent
+    FournisseurListComponent,
+    ClientListComponent
   ],
   imports: [
     BrowserModule,

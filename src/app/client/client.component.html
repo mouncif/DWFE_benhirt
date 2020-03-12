@@ -1,1 +1,58 @@
-<p>client works!</p>
+<!--Fatima Zahra BENHIRT-->
+<div class="mat-elevation-z8" >
+    
+    <form [formGroup] ='service.form' class="normal-form" (submit)="onSubmit()">
+        <mat-grid-list cols="2" rowHeight="400px">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="id"> 
+                    <mat-form-field>
+                        <input formControlName="nomc" matInput placeholder="Nom Client"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input formControlName="prenomc" matInput placeholder="Prenom Client"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    
+                    <mat-form-field>
+                        <input formControlName="statusc" matInput placeholder="Status Client"> 
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input formControlName="photoc" matInput placeholder="Photo Client">
+                        <!-- <mat-error>champ obligatoire</mat-error>-->
+                    </mat-form-field>
+                    
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="controles-container">
+                   
+                    <mat-form-field>
+                        <input formControlName="telc" matInput placeholder="Telephone Client">  
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="emailc" matInput placeholder="Email Client">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="adressec" matInput placeholder="Adresse Client">
+                    </mat-form-field>
+                    
+                    <mat-form-field>
+                        <input formControlName="villec" matInput placeholder="Ville Client">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <div class="button-row">
+                        <button mat-raised-button color="info" type="submit" [disabled]='service.form.invalid'>submit</button>
+                    </div>
+                    </div>
+                    
+                    
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</div>

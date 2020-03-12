@@ -1,0 +1,76 @@
+<!--Fatima Zahra BENHIRT-->
+
+<div class="search-div">
+  <button mat-raised-button (click)="onCreate()">
+    <mat-icon>add</mat-icon>Create
+  </button>
+<br><br>  
+  
+</div>
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+      <ng-container matColumnDef="nomc">
+        <th mat-header-cell *matHeaderCellDef> Nom Client</th>
+        <td mat-cell *matCellDef="let element"> {{element.nomc}} </td>
+      </ng-container>
+    
+      
+      <ng-container matColumnDef="prenomc">
+        <th mat-header-cell *matHeaderCellDef> Prenom Client </th>
+        <td mat-cell *matCellDef="let element"> {{element.prenomc}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="statusc">
+          <th mat-header-cell *matHeaderCellDef> Status Client </th>
+          <td mat-cell *matCellDef="let element"> {{element.statusc}} </td>
+        </ng-container>
+    
+      
+      <ng-container matColumnDef="photoc">
+        <th mat-header-cell *matHeaderCellDef> Photo Client </th>
+        <td mat-cell *matCellDef="let element"> {{element.photoc}} </td>
+      </ng-container>
+    
+     
+      <ng-container matColumnDef="telc">
+        <th mat-header-cell *matHeaderCellDef> Tel Client </th>
+        <td mat-cell *matCellDef="let element"> {{element.telc}} </td>
+      </ng-container>
+  
+  
+        <ng-container matColumnDef="emailc">
+          <th mat-header-cell *matHeaderCellDef> Email Client </th>
+          <td mat-cell *matCellDef="let element"> {{element.emailc}} </td>
+        </ng-container>
+  
+  
+        <ng-container matColumnDef="adressec">
+          <th mat-header-cell *matHeaderCellDef> Adresse Client</th>
+          <td mat-cell *matCellDef="let element"> {{element.adressec}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="villec">
+          <th mat-header-cell *matHeaderCellDef> Ville Client</th>
+          <td mat-cell *matCellDef="let element"> {{element.villec}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef> Actions</th>
+            <td mat-cell *matCellDef="let row">
+              <button mat-icon-button (click)="onEdit(row)"><mat-icon>launch</mat-icon></button>
+              <button mat-icon-button color="primary" (click)="onDelete(row.id)"><mat-icon>delete_outline</mat-icon></button>
+            </td>
+        </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+</div>  
+    
