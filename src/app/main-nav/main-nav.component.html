@@ -6,9 +6,9 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>SmartVentes</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Dossier client</a>
-      <a mat-list-item href="#">Produits</a>
-      <a mat-list-item href="#">Fournisseurs</a>
+      <a mat-list-item routerLink="/clients">Dossier client</a>
+      <a mat-list-item routerLink="/produits">Produits</a>
+      <a mat-list-item routerLink="/fournisseurs">Fournisseurs</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -28,6 +28,8 @@
       <mat-icon aria-label="Side nav toggle icon">settings</mat-icon>
 
     </mat-toolbar>
+    <router-outlet></router-outlet>
+
     <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>

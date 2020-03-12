@@ -18,7 +18,7 @@
       "nomf": "Samir & Co.",
       "nomcourtf": "SCo",
       "villef": "MARRAKECH",
-      "adressef": "bloc 3 Quartier industriel Sidi Ghanem num 36 ",
+      "adressef": "bloc 3 Quartier industriel36 ",
       "telfixf": "0524339076",
       "telmobilef": "0618836787",
       "faxf": "0524233432",
@@ -29,7 +29,7 @@
       "nomf": "Asma Tours",
       "nomcourtf": "ASTR",
       "villef": "MARRAKECH",
-      "adressef": "Résidence Ibn Toumert Av Hassan 2 ",
+      "adressef": "Res Ibn Toumert Av Hassan 2 ",
       "telfixf": "0524333226",
       "telmobilef": "0698761245",
       "faxf": "0524094831",
@@ -57,6 +57,17 @@
       "telc": "0015433890",
       "emailc": "john.doe@gmail.com",
       "adressec": "5th Avenue",
+      "villec": "NYC"
+    },
+    {
+      "id": 3,
+      "nomc": "Smith",
+      "prenomc": "Jane",
+      "statusc": "M",
+      "photoc": "",
+      "telc": "0234456711",
+      "emailc": "jane.s@gmail.com",
+      "adressec": "Br Square",
       "villec": "NYC"
     }
   ]
