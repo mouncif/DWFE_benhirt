@@ -1,1 +1,58 @@
-<p>fournisseur works!</p>
+<!--Fatima Zahra BENHIRT-->
+<div class="mat-elevation-z8" >
+    
+    <form [formGroup] ='service.form' class="normal-form" (submit)="onSubmit()">
+        <mat-grid-list cols="2" rowHeight="400px">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="id"> 
+                    <mat-form-field>
+                        <input formControlName="nomf" matInput placeholder="Nom Fournisseur"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input formControlName="nomcourtf" matInput placeholder="Nom Fournisseur Court"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    
+                    <mat-form-field>
+                        <input formControlName="villef" matInput placeholder="Ville Fournisseur"> 
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input formControlName="adressef" matInput placeholder="Adresse Fournisseur">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="controles-container">
+                   
+                    <mat-form-field>
+                        <input formControlName="telfixf" matInput placeholder="Telephone Fix">  
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="telmobilef" matInput placeholder="Telephone Mobile">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="faxf" matInput placeholder="Fax Fournisseur">
+                    </mat-form-field>
+                    
+                    <mat-form-field>
+                        <input formControlName="emailf" matInput placeholder="Email Fournisseur">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <div class="button-row">
+                        <button mat-raised-button color="warn" type="submit" [disabled]='service.form.invalid'>submit</button>
+                    </div>
+                    </div>
+                    
+                    
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</div>

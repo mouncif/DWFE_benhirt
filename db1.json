@@ -10,28 +10,30 @@
       "unite": 3,
       "qinit": 10,
       "qtactu": 7
+    }
+  ],
+  "fournisseurs": [
+    {
+      "id": 1,
+      "nomf": "Samir & Co.",
+      "nomcourtf": "SCo",
+      "villef": "MARRAKECH",
+      "adressef": "bloc 3 Quartier industriel Sidi Ghanem num 36 ",
+      "telfixf": "0524339076",
+      "telmobilef": "0618836787",
+      "faxf": "0524233432",
+      "emailf": "sandco@gmail.com"
     },
     {
-      "id": 3,
-      "nom": "aaav",
-      "nomcourt": "a",
-      "prixb": "23",
-      "prixv": "25",
-      "seuilmax": "30",
-      "unite": "89",
-      "qinit": "12",
-      "qtactu": "80"
-    },
-    {
-      "id": 4,
-      "nom": "a",
-      "nomcourt": "b",
-      "prixb": "12",
-      "prixv": "14",
-      "seuilmax": "2",
-      "unite": "22",
-      "qinit": "33",
-      "qtactu": "44"
+      "id": 2,
+      "nomf": "Asma Tours",
+      "nomcourtf": "ASTR",
+      "villef": "MARRAKECH",
+      "adressef": "Résidence Ibn Toumert Av Hassan 2 ",
+      "telfixf": "0524333226",
+      "telmobilef": "0698761245",
+      "faxf": "0524094831",
+      "emailf": "asmatours@gmail.com"
     }
   ]
 }

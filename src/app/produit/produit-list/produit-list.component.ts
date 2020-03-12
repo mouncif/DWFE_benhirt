@@ -21,21 +21,20 @@ export class ProduitListComponent implements OnInit {
   onCreate() {
     this.service.initializeFormGroup();
     const dialogConfig = new MatDialogConfig();
-   
-    dialogConfig.width = '60%';
+    dialogConfig.width = '70%';
     this.dialogue.open(ProduitComponent, dialogConfig);
   }
 
   onEdit(row) {
     this.service.fillFormGroup(row)
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.width = '60%';
+    dialogConfig.width = '70%';
     this.dialogue.open(ProduitComponent, dialogConfig);
   }
 
   onDelete(id) {
-    if (confirm('Are you sure to delete this record ?')){
-      console.log(id);
+    if (confirm('Vous êtes sur le point de supprimer un enregistrement. Etes vous sûrs ?')){
+      //console.log(id);
       this.service.deleteProduit(id).subscribe(() => {
     });
     }

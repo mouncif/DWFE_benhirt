@@ -23,6 +23,7 @@ import { ProduitListComponent } from './produit/produit-list/produit-list.compon
 import { ProduitService } from './services/produit.service';
 import { FournisseurService } from './services/fournisseur.service';
 import { ClientService } from './services/client.service';
+import { FournisseurListComponent } from './fournisseur/fournisseur-list/fournisseur-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ClientService } from './services/client.service';
     MainNavComponent,
     FournisseurComponent,
     ClientComponent,
-    ProduitListComponent
+    ProduitListComponent,
+    FournisseurListComponent
   ],
   imports: [
     BrowserModule,

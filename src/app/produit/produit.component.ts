@@ -1,3 +1,4 @@
+//Fatima Zahra BENHIRT
 import { Component, OnInit } from '@angular/core';
 import { Prod } from 'src/produits';
 import { ServicesService } from '../services.service';
@@ -37,9 +38,9 @@ export class ProduitComponent implements OnInit {
     });
     
     }
-  this.service.form.reset()
-  this.service.initializeFormGroup();
-  window.location.reload();
+    this.service.form.reset()
+    this.service.initializeFormGroup();
+    window.location.reload();
   
 }
   
